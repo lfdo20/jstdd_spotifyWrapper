@@ -1,0 +1,16 @@
+{
+  "name": "jstdd",
+  "version": "1.0.0",
+  "description": "Treinamento curso JSTDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Leandro LFdO <lfdo20@gmail.com> (https://lfdo20.github.io/lfdo)",
+  "license": "MIT"
+}
