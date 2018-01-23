@@ -1,16 +1,49 @@
 {
   "name": "jstdd",
   "version": "1.0.0",
-  "description": "Treinamento curso JSTDD",
+  "description": "Curso JSTDD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core tests/**/*.spec.js --reporter=spec --bail",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --bail --watch",
+    "lint": "./node_modules/.bin/eslint /src*.js",
+    "prepush": "npm run lint",
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfdo20/jstdd.git"
   },
   "keywords": [
     "js",
     "tdd",
-    "library"
+    "library",
+    "lib"
   ],
-  "author": "Leandro LFdO <lfdo20@gmail.com> (https://lfdo20.github.io/lfdo)",
-  "license": "MIT"
+  "author": "Leandro Fernandes lfdo <lfdo20@gmail.com> (https://lfdo20.github.io/lfdo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfdo20/jstdd/issues"
+  },
+  "homepage": "https://github.com/lfdo20/jstdd#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "husky": "^0.14.3",
+    "mocha": "^5.0.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
 }
