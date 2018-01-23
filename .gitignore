@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode/
+src/utils.js
 
 # Runtime data
 pids
@@ -59,3 +60,5 @@ typings/
 # dotenv environment variables file
 .env
 
+src/utils.js
+src/utils.js

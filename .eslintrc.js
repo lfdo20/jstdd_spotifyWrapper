@@ -1,3 +1,9 @@
 module.exports = {
-    "extends": "airbnb"
+  "extends": "airbnb",
+  "plugins": [
+    "mocha"
+  ],
+  "rules": {
+    "mocha/no-exclusive-tests": "error"
+  }
 };
