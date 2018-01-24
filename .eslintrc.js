@@ -5,5 +5,8 @@ module.exports = {
   ],
   "rules": {
     "mocha/no-exclusive-tests": "error"
+  },
+  "env": {
+    "mocha": true
   }
 };

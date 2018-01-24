@@ -27,13 +27,9 @@
     "type": "git",
     "url": "git+https://github.com/lfdo20/jstdd.git"
   },
-  "keywords": [
-    "js",
-    "tdd",
-    "library",
-    "lib"
-  ],
-  "author": "Leandro Fernandes lfdo <lfdo20@gmail.com> (https://lfdo20.github.io/lfdo)",
+  "keywords": ["js", "tdd", "library", "lib"],
+  "author":
+    "Leandro Fernandes lfdo <lfdo20@gmail.com> (https://lfdo20.github.io/lfdo)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lfdo20/jstdd/issues"

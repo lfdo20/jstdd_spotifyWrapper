@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode/
-src/utils.js
+/src/.sec.js
 
 # Runtime data
 pids
@@ -62,3 +62,5 @@ typings/
 
 src/utils.js
 src/utils.js
+
+src/sec\.js
