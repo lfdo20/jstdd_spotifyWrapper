@@ -1,6 +1,6 @@
-# Js - Tdd
+# JsTdd - Spotify Wrapper
 
-reposisório para utilização no curso JS-TDD.
+Simple wrapper for (Spotify API)(https://developer.spotify.com/web-api/).
 
 ## Getting Started
 

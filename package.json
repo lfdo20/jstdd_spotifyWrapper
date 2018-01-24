@@ -1,7 +1,7 @@
 {
-  "name": "jstdd",
+  "name": "jstdd-spotify-Wrapper",
   "version": "1.0.0",
-  "description": "Curso JSTDD",
+  "description": "Curso JSTDD - Simple wrapper for Spotify API.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
@@ -25,16 +25,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lfdo20/jstdd.git"
+    "url": "git+https://github.com/lfdo20/jstdd_spotifyWrapper.git"
   },
-  "keywords": ["js", "tdd", "library", "lib"],
-  "author":
-    "Leandro Fernandes lfdo <lfdo20@gmail.com> (https://lfdo20.github.io/lfdo)",
+  "keywords": [
+    "js",
+    "tdd",
+    "library",
+    "lib"
+  ],
+  "author": "Leandro Fernandes lfdo <lfdo20@gmail.com> (https://lfdo20.github.io/lfdo)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lfdo20/jstdd/issues"
+    "url": "https://github.com/lfdo20/jstdd_spotifyWrapper/issues"
   },
-  "homepage": "https://github.com/lfdo20/jstdd#readme",
+  "homepage": "https://github.com/lfdo20/jstdd_spotifyWrapper#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
