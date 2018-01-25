@@ -176,8 +176,10 @@ var _config = __webpack_require__(1);
 
 var _utils = __webpack_require__(2);
 
-// global.fetch = require('node-fetch');
-
+//global.fetch = require('node-fetch');
+// perguntar no grupo do curso sobre esse 'problema"
+// quando rola o teste sem o global fetch dá problema, e ok, entend..
+// porém se dou o build e abro no browser com o global.fetch, dá problema e não funciona.
 
 var getAlbum = exports.getAlbum = function getAlbum(id) {
   return fetch(_config.API_URL + 'albums/' + id).then(_utils.toJSON);
@@ -193,9 +195,7 @@ var getAlbumTracks = exports.getAlbumTracks = function getAlbumTracks(id) {
 
 var albums = (0, _search.searchAlbum)('incubus');
 
-albums.then(function (data) {
-  return console.log(data);
-});
+// albums.then(data => console.log(data));
 // data.albums.itens.map(item => console.log(item.name)));
 
 /***/ })
