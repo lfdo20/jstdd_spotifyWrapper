@@ -148,6 +148,8 @@ var _search = __webpack_require__(0);
 
 var _albums = __webpack_require__(4);
 
+/* global fetch */
+
 module.exports = {
   getAlbum: _albums.getAlbum,
   getAlbums: _albums.getAlbums,
@@ -176,14 +178,11 @@ var _config = __webpack_require__(1);
 
 var _utils = __webpack_require__(2);
 
-//global.fetch = require('node-fetch');
-// perguntar no grupo do curso sobre esse 'problema"
-// quando rola o teste sem o global fetch dá problema, e ok, entend..
-// porém se dou o build e abro no browser com o global.fetch, dá problema e não funciona.
+// global.fetch = require('node-fetch');
 
 var getAlbum = exports.getAlbum = function getAlbum(id) {
   return fetch(_config.API_URL + 'albums/' + id).then(_utils.toJSON);
-};
+}; /* global fetch */
 
 var getAlbums = exports.getAlbums = function getAlbums(ids) {
   return fetch(_config.API_URL + 'albums/?ids=' + ids).then(_utils.toJSON);

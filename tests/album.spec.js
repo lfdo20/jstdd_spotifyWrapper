@@ -4,10 +4,11 @@ import sinonStubPromise from 'sinon-stub-promise';
 import chai, { expect } from 'chai';
 import { getAlbum, getAlbums, getAlbumTracks } from '../src/albums';
 
+/* eslint no-unused-expressions: 0 */
+/* eslint no-unused-vars: 0 */
+
 chai.use(sinonChai);
 sinonStubPromise(sinon);
-
-// global.fetch = require('node-fetch');
 
 describe('Album', () => {
   let fetchedStub;

@@ -1,3 +1,5 @@
+/* global fetch */
+
 import { searchAlbum } from '../src/search';
 import { API_URL } from './config';
 import { toJSON } from './utils';
