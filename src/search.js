@@ -7,7 +7,6 @@ export const search = (query, type) =>
   fetch(`${API_URL}search?q=${query}&type=${type}`)
     .then(toJSON);
 
-
 export const searchAlbum = query =>
   search(query, 'albums');
 
@@ -19,4 +18,3 @@ export const searchTracks = query =>
 
 export const searchPlaylists = query =>
   search(query, 'playlist');
-
