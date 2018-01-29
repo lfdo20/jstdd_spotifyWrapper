@@ -1,5 +1,7 @@
 # Spotify Wrapper
 
+[![Build Status](https://www.travis-ci.org/lfdo20/jstdd_spotifyWrapper.svg?branch=master)](https://www.travis-ci.org/lfdo20/jstdd_spotifyWrapper)
+
 A wrapper to work with the [Spotify Web API](https://developer.spotify.com/web-api/).
 
 ## Browser Support
