@@ -1,6 +1,6 @@
 # Spotify Wrapper
 
-[![Build Status](https://www.travis-ci.org/lfdo20/jstdd_spotifyWrapper.svg?branch=master)](https://www.travis-ci.org/lfdo20/jstdd_spotifyWrapper)
+[![Build Status](https://www.travis-ci.org/lfdo20/jstdd_spotifyWrapper.svg?branch=master)](https://www.travis-ci.org/lfdo20/jstdd_spotifyWrapper) [![Coverage Status](https://coveralls.io/repos/github/lfdo20/jstdd_spotifyWrapper/badge.svg?branch=master)](https://coveralls.io/github/lfdo20/jstdd_spotifyWrapper?branch=master)
 
 A wrapper to work with the [Spotify Web API](https://developer.spotify.com/web-api/).
 
