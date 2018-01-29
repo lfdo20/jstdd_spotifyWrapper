@@ -16,6 +16,8 @@ sinonStubPromise(sinon);
 // search for tracks
 // search for Playlists
 
+global.fetch = require('node-fetch');
+
 describe('Search', () => {
   let fetchedStub;
   let promise;

@@ -18,7 +18,8 @@
     "buildwp": "./node_modules/.bin/webpack --colors --progress",
     "watch": "npm run build -- --watch",
     "server": "./node_modules/.bin/webpack-dev-server --inline --open",
-    "test:coverage": "nyc npm test"
+    "test:coverage": "nyc npm test",
+    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
     "functions": 80,
