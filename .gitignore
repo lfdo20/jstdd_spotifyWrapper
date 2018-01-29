@@ -6,7 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode/
-/src/.sec.js
 
 # Runtime data
 pids
@@ -59,8 +58,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-src/utils.js
-src/utils.js
-
-src/sec\.js

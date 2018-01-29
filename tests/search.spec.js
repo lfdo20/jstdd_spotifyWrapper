@@ -7,7 +7,8 @@ import { search, searchAlbum, searchArtist, searchTracks, searchPlaylists } from
 chai.use(sinonChai);
 sinonStubPromise(sinon);
 
-// global.fetch = require('node-fetch');
+/* eslint no-unused-expressions: 0 */
+/* eslint no-unused-vars: 0 */
 
 // Generic search with more than one type
 // Search for Albums

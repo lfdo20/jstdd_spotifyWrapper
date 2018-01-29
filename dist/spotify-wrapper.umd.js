@@ -87,12 +87,16 @@ exports.searchPlaylists = exports.searchTracks = exports.searchArtist = exports.
 
 var _config = __webpack_require__(1);
 
+var _config2 = _interopRequireDefault(_config);
+
 var _utils = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* global fetch */
 
 var search = exports.search = function search(query, type) {
-  return fetch(_config.API_URL + 'search?q=' + query + '&type=' + type).then(_utils.toJSON);
+  return fetch(_config2.default + 'search?q=' + query + '&type=' + type).then(_utils.toJSON);
 };
 
 var searchAlbum = exports.searchAlbum = function searchAlbum(query) {
@@ -121,7 +125,9 @@ var searchPlaylists = exports.searchPlaylists = function searchPlaylists(query) 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var API_URL = exports.API_URL = 'https://api.spotify.com/v1/';
+var API_URL = 'https://api.spotify.com/v1/';
+
+exports.default = API_URL;
 
 /***/ }),
 /* 2 */
@@ -133,9 +139,11 @@ var API_URL = exports.API_URL = 'https://api.spotify.com/v1/';
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var toJSON = exports.toJSON = function toJSON(data) {
+var toJSON = function toJSON(data) {
   return data.json();
 };
+
+exports.default = toJSON;
 
 /***/ }),
 /* 3 */
@@ -147,8 +155,6 @@ var toJSON = exports.toJSON = function toJSON(data) {
 var _search = __webpack_require__(0);
 
 var _albums = __webpack_require__(4);
-
-/* global fetch */
 
 module.exports = {
   getAlbum: _albums.getAlbum,
@@ -176,26 +182,25 @@ var _search = __webpack_require__(0);
 
 var _config = __webpack_require__(1);
 
+var _config2 = _interopRequireDefault(_config);
+
 var _utils = __webpack_require__(2);
 
-// global.fetch = require('node-fetch');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var getAlbum = exports.getAlbum = function getAlbum(id) {
-  return fetch(_config.API_URL + 'albums/' + id).then(_utils.toJSON);
+  return fetch(_config2.default + 'albums/' + id).then(_utils.toJSON);
 }; /* global fetch */
+/* eslint no-unused-expressions: 0 */
+/* eslint no-unused-vars: 0 */
 
 var getAlbums = exports.getAlbums = function getAlbums(ids) {
-  return fetch(_config.API_URL + 'albums/?ids=' + ids).then(_utils.toJSON);
+  return fetch(_config2.default + 'albums/?ids=' + ids).then(_utils.toJSON);
 };
 
 var getAlbumTracks = exports.getAlbumTracks = function getAlbumTracks(id) {
-  return fetch(_config.API_URL + 'albums/' + id + '/tracks').then(_utils.toJSON);
+  return fetch(_config2.default + 'albums/' + id + '/tracks').then(_utils.toJSON);
 };
-
-var albums = (0, _search.searchAlbum)('incubus');
-
-// albums.then(data => console.log(data));
-// data.albums.itens.map(item => console.log(item.name)));
 
 /***/ })
 /******/ ]);

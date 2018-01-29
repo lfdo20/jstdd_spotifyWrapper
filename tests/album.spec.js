@@ -7,6 +7,8 @@ import { getAlbum, getAlbums, getAlbumTracks } from '../src/albums';
 /* eslint no-unused-expressions: 0 */
 /* eslint no-unused-vars: 0 */
 
+global.fetch = require('node-fetch');
+
 chai.use(sinonChai);
 sinonStubPromise(sinon);
 

@@ -1,7 +1,9 @@
 /* global fetch */
+/* eslint no-unused-expressions: 0 */
+/* eslint no-unused-vars: 0 */
 
 import { searchAlbum } from '../src/search';
-import { API_URL } from './config';
+import API_URL from './config';
 import { toJSON } from './utils';
 
 export const getAlbum = id =>

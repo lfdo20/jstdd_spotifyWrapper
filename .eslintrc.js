@@ -8,5 +8,8 @@ module.exports = {
   },
   "env": {
     "mocha": true
+  },
+  "globals": {
+    "fetch": true
   }
 };
