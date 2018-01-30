@@ -78,7 +78,9 @@ describe('request method', () => {
       headers: {
         Authorization: `'Bearer foo'`,
       },
-    };spotify.request('url');
+    };
+
+    spotify.request('url');
     expect(fetchedStub).to.have.been.calledWith('url', headers);
   });
 });

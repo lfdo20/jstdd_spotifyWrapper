@@ -1,10 +1,10 @@
 import SpotifyWrapper from '../src/index';
 
-global.fetch = require ('node-fetch');
+global.fetch = require('node-fetch');
 
 const spotify = new SpotifyWrapper({
-  token: 'BQBEGyt8HkSTzdqRVs170WgUwnLl0INf4MUH_Bm_lno_D2BwH-fE-6iDb4MI6ttrea4JAH0dN5ETr2LOHDey5RvN79zw2y5XhlrchGNax_bDG0CpBGFy89ZVjSiwULy1DJfX83acxzKUMtwvQ_I'
-})
+  token: 'BQCOImTIjbOlFPx-EY4E7cR6YBLIXs_aEtMaj7O35vP_YzTK9wG3YhfMSi3BnAsThP3oGYMWvzOyIpzEG9W6aTuKpojjtd9VXKIaWHV-aAuD9haz-I6QAdb11FfKfBRQS_Rf6MD3-9zYDnyanRI',
+});
 
 const albums = spotify.search.Album('incubus');
 
