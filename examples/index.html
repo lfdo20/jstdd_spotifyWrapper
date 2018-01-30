@@ -13,10 +13,10 @@
   <script>
 
   const spotify = new SpotifyWrapper({
-      token: 'BQCOImTIjbOlFPx-EY4E7cR6YBLIXs_aEtMaj7O35vP_YzTK9wG3YhfMSi3BnAsThP3oGYMWvzOyIpzEG9W6aTuKpojjtd9VXKIaWHV-aAuD9haz-I6QAdb11FfKfBRQS_Rf6MD3-9zYDnyanRI'
+      token: 'BQB_MYulPlgXUUR8-q0zqwEUUSpIEuKv9dX0PhJ746kdt6E0SQW9lFv-uSqTLC18JnCc0kEkb8EzzHlgUvKE_RmPUpxGbrw6oa4QCilpTwl3gTZNdYifhvpJ-7ov1p-CkZSTlatIeJWLNAE_BFs'
     });
 
-  const albums = spotify.search.Album('incubus');
+  const albums = spotify.search.album('incubus');
   const albumsEl = document.getElementById('albums');
 
   albums.then(data => {
