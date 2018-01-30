@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Teste Spotify Wrapper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <script src="../dist/spotify-wrapper.umd.js"></script>
+  <div class="albums"></div>
+  <script>
+
+  const spotify = new SpotifyWrapper({
+      token: 'BQBEGyt8HkSTzdqRVs170WgUwnLl0INf4MUH_Bm_lno_D2BwH-fE-6iDb4MI6ttrea4JAH0dN5ETr2LOHDey5RvN79zw2y5XhlrchGNax_bDG0CpBGFy89ZVjSiwULy1DJfX83acxzKUMtwvQ_I'
+    });
+
+  const albums = spotify.search.Album('incubus');
+  const albumsEl = document.getElementById('albums');
+
+  albums.then(data => {
+    markup = data.albums.items.map( item =>
+    `<img src='${item.image[1].url}' alt='${item.name}'/>`
+
+    ).join('');
+
+    albumsEl.innerHTML = markup;
+
+  });
+
+  </script>
+
+</body>
+</html>

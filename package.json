@@ -1,5 +1,5 @@
 {
-  "name": "lfdo-spotify-Wrapper",
+  "name": "lfdo-spotify-wrapper",
   "version": "1.0.3",
   "description": "Curso JSTDD - Simple wrapper for Spotify API.",
   "main": "./lib/index.js",
